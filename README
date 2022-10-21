@@ -54,6 +54,12 @@ Primeiras Aulas
     Deployment cria novos replicasets
 
 2.6 Rollout e Revisões
+    Historico de versões
+    Voltando para versões anteriores (undo e --to-revision=*)
+
+3 Services
+
+3.1 Entendendo o conceito de services
 
 
 
