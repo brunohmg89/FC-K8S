@@ -1,0 +1,42 @@
+Repositório criado para o curso de Kubernetes da FullCycle
+
+Primeiras Aulas
+
+1 Iniciando com Kubernetes
+
+1.1 Introdução ao Kubernetes
+    Explicação geral sobre o Kubernetes
+
+1.2 Instalando Kind
+    Kind é uma ferramenta para executar clusters locais do Kubernetes usando "nodes" de conteiner Docker.
+    Site: https://kind.sigs.k8s.io/
+    Instalado kind via "chocolatey"
+
+    Também é necessário instalar o kubectl, ferramenta para conexão e gerenciamento dos clusters
+    Site: https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+    Foi instalado via "Chocolatey"
+
+1.3 Criando primeiro cluster com kind
+    Primeiros comandos no kind
+
+1.4 Criando cluster multi node
+    Criação do arquivo kind.yaml, arquivo utilizado para criação de vários clusters
+
+1.5 Mudança de contexto e extensão do VSCod
+    Dica para instalação de uma extensão no VSCode para a troca mais fácil entre os clusters
+
+2 Primeiros passos na prática
+
+2.1 Criando aplicação exemplo e imagem
+    Criação de um app em GoLang chamado "server.go"
+    Criação de um arquivo Dockerfile para build de imagem para utilização do app em Go
+    Feito push da imagem criada para o DockerHub
+
+2.2 Trabalhando com Pods
+    Comandos do kubectl para criação do pod
+    Criação do arquivo pod.yaml
+
+2.3 Criando primeira ReplicaSet
+
+
+
