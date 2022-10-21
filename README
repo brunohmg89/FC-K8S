@@ -1,65 +1,86 @@
-Repositório criado para o curso de Kubernetes da FullCycle
+# Repositório criado para o curso de Kubernetes da FullCycle
 
-Primeiras Aulas
+## Iniciando com Kubernetes
 
-1 Iniciando com Kubernetes
+1. Introdução ao Kubernetes
 
-1.1 Introdução ao Kubernetes
-    Explicação geral sobre o Kubernetes
+- Explicação geral sobre o Kubernetes
 
-1.2 Instalando Kind
-    Kind é uma ferramenta para executar clusters locais do Kubernetes usando "nodes" de conteiner Docker.
-    Site: https://kind.sigs.k8s.io/
-    Instalado kind via "chocolatey"
+2. Instalando Kind
 
-    Também é necessário instalar o kubectl, ferramenta para conexão e gerenciamento dos clusters
-    Site: https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
-    Foi instalado via "Chocolatey"
+- Kind é uma ferramenta para executar clusters locais do Kubernetes usando "nodes" de conteiner Docker.
+- Site: https://kind.sigs.k8s.io/
+- Instalado kind via "chocolatey"
+- Também é necessário instalar o kubectl, ferramenta para conexão e gerenciamento dos clusters
+- Site: https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+- Foi instalado via "Chocolatey"
 
-1.3 Criando primeiro cluster com kind
-    Primeiros comandos no kind
+3. Criando primeiro cluster com kind
 
-1.4 Criando cluster multi node
-    Criação do arquivo kind.yaml, arquivo utilizado para criação de vários clusters
+- Primeiros comandos no kind
 
-1.5 Mudança de contexto e extensão do VSCod
-    Dica para instalação de uma extensão no VSCode para a troca mais fácil entre os clusters
+4. Criando cluster multi node
 
-2 Primeiros passos na prática
+- Criação do arquivo kind.yaml, arquivo utilizado para
+- criação de vários clusters
 
-2.1 Criando aplicação exemplo e imagem
-    Criação de um app em GoLang chamado "server.go"
-    Criação de um arquivo Dockerfile para build de imagem para utilização do app em Go
-    Feito push da imagem criada para o DockerHub
+5. Mudança de contexto e extensão do VSCode
 
-2.2 Trabalhando com Pods
-    Comandos do kubectl para criação do pod
-    Criação do arquivo pod.yaml
-    Realização do comando kubectl port-for
+- Dica para instalação de uma extensão no VSCode para a troca mais fácil entre os clusters
 
-2.3 Criando primeira ReplicaSet
-    Trabalhando com ReplicaSet
-    Criação do arquivo replicaset.yaml
-    Dentro desse arquivo criando a quantidade de replicas de um pod
-    Se eu apagar um pod devido a configuração do replicaset automaticamente se cria outros pods
+## Primeiros passos na prática
 
-2.4 Problema do ReplicaSet
-    Criado nova versão do server.go e atualizado arquivo do ReplicaSet e os pods não foram atualizados
-    Pod só atualiza quando ele é deletado e recriado
+1. Criando aplicação exemplo e imagem
 
-2.5 Implementando Deployment
-    Deployment -> ReplicaSet -> Pod
-    Criação do arquivo deployment.yaml
-    Atualizando a versão do server.go dentro do arquivo deployment ele faz a atualização dos pods automaticamente
-    Deployment cria novos replicasets
+- Criação de um app em GoLang chamado "server.go"
 
-2.6 Rollout e Revisões
-    Historico de versões
-    Voltando para versões anteriores (undo e --to-revision=*)
+- Criação de um arquivo Dockerfile para build de imagem para utilização do app em Go
 
-3 Services
+- Feito push da imagem criada para o DockerHub
 
-3.1 Entendendo o conceito de services
+2. Trabalhando com Pods
+
+- Comandos do kubectl para criação do pod
+
+- Criação do arquivo pod.yaml
+
+- Realização do comando kubectl port-for
+
+3. Criando primeira ReplicaSet
+
+- Trabalhando com ReplicaSet
+
+- Criação do arquivo replicaset.yaml
+
+- Dentro desse arquivo criando a quantidade de replicas de um pod
+
+- Se eu apagar um pod devido a configuração do replicaset automaticamente se cria outros pods
+
+4. Problema do ReplicaSet
+
+- Criado nova versão do server.go e atualizado arquivo do ReplicaSet e os pods não foram atualizados
+
+- Pod só atualiza quando ele é deletado e recriado
+
+5. Implementando Deployment
+
+- Deployment -> ReplicaSet -> Pod
+
+ - Criação do arquivo deployment.yaml
+
+- Atualizando a versão do server.go dentro do arquivo deployment ele faz a atualização dos pods automaticamente
+
+- Deployment cria novos replicasets
+
+6. Rollout e Revisões
+
+- Historico de versões
+
+- Voltando para versões anteriores (undo e --to-revision=*)
+
+## Services
+
+1. Entendendo o conceito de services
 
 
 
