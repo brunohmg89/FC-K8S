@@ -41,6 +41,19 @@ Primeiras Aulas
     Trabalhando com ReplicaSet
     Criação do arquivo replicaset.yaml
     Dentro desse arquivo criando a quantidade de replicas de um pod
+    Se eu apagar um pod devido a configuração do replicaset automaticamente se cria outros pods
+
+2.4 Problema do ReplicaSet
+    Criado nova versão do server.go e atualizado arquivo do ReplicaSet e os pods não foram atualizados
+    Pod só atualiza quando ele é deletado e recriado
+
+2.5 Implementando Deployment
+    Deployment -> ReplicaSet -> Pod
+    Criação do arquivo deployment.yaml
+    Atualizando a versão do server.go dentro do arquivo deployment ele faz a atualização dos pods automaticamente
+    Deployment cria novos replicasets
+
+2.6 Rollout e Revisões
 
 
 
