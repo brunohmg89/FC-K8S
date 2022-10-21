@@ -35,8 +35,13 @@ Primeiras Aulas
 2.2 Trabalhando com Pods
     Comandos do kubectl para criação do pod
     Criação do arquivo pod.yaml
+    Realização do comando kubectl port-for
 
 2.3 Criando primeira ReplicaSet
+    Trabalhando com ReplicaSet
+    Criação do arquivo replicaset.yaml
+    Dentro desse arquivo criando a quantidade de replicas de um pod
+
 
 
 
