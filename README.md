@@ -88,6 +88,24 @@
 
 1. Entendendo o conceito de services
 
+    - Explicando o conceito de services, atua como se fosse um load balancer encaminhando a sessão para os pods.
+
+2. Utilizando ClusterIP
+
+    - Criação do arquivo service.yaml
+
+    - Fazendo port-forward para o service criado
+
+3. Diferenças entre Port e targetPort
+
+    - port do arquivo service é a porta do próprio service e targetPort é a porta para qual será encaminhada para o conteiner
+
+4. Utilizando proxy para acessar API do Kubernetes
+
+    - Comando kubectl proxu mostrando a API do Kubernetes
+
+5. Utilizando NodePort
+
     -
 
 

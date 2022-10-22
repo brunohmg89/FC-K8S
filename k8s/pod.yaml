@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Pod
 metadata:
   name: "goserver"
@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
   - name: goserver
-    image: "brunohmg89/hello-go:latest"
+    image: "brunohmg89/hello-go:v4"
