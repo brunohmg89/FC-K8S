@@ -4,11 +4,11 @@ metadata:
   name: goserver-service
 spec:
   selector:
-    name: goserver
+    app: goserver
   type: NodePort
   ports:
   - name: goserver-service
     port: 80
     targetPort: 7000
     protocol: TCP
-    NodePort: 30001
+    nodePort: 30001 #30000 - 32767

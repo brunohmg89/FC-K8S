@@ -106,6 +106,15 @@
 
 5. Utilizando NodePort
 
+    - NodePort abre uma porta em todos os nodes
+
+    - Alteração do arquivo service.yaml
+
+    - Acessando o IP do node na porta 30001, será encaminhado para a porta 80 do service e que encaminhará para a porta 7000 dos pods
+
+6. Trabalhando com LoadBalancer
+
     -
+
 
 
