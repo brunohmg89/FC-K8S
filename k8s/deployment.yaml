@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: goserver
-  replicas: 10
+  replicas: 1
   template:
     metadata:
       labels:
@@ -16,4 +16,9 @@ spec:
     spec:
       containers:
       - name: goserver
-        image: "brunohmg89/hello-go:v4"
+        image: "brunohmg89/hello-go:v5"
+        env:
+        - name: NAME
+          value: "Brunoo"
+        - name: AGE
+          value: "33"

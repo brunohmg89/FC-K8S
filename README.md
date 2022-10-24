@@ -114,6 +114,22 @@
 
 6. Trabalhando com LoadBalancer
 
+    - Gera um IP externo para acesso a aplicação
+
+## Objetos de configuração
+
+1. Entendendo objetos de configuração
+
+    - Conceito inicial dos objetos de configuração
+
+2. Utilizando váriaveis de ambiente
+
+    - Colocando váriaveis no app e fazendo o push para o DockerHub.
+
+    - Modificando o arquivo de deploy.
+
+3. Váriaveis de ambiente com ConfigMap
+
     -
 
 
