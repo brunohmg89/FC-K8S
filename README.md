@@ -130,7 +130,28 @@
 
 3. Váriaveis de ambiente com ConfigMap
 
-    -
+    - Criando confimap-env para configuração de váriaveis
+
+    - Alterando arquivo de deployment indicando váriaveis contidas dentro do ConfigMap
+
+    - Duas formas de declaração de váriaveis, `valueFrom` dentro de `env` ou um `envFrom` apontando o arquivo de configMap.
+
+4. Injetando ConfigMap na aplicação
+
+    - Criando configmap-family para injeção de váriaveis pela aplicação
+
+    - Novo build de imagem e push para o DockerHub (v7)
+
+    - Montando um volume para envio do configmap-family
+
+    - Montando o volume dentro do deployment
+
+    - Verificando logs do pod `kubectl logs`
+
+    - Executando um pod com o comando `kubectl exec -it NOMEDOPOD -- bash`
+
+
+
 
 
 
