@@ -162,6 +162,20 @@
 
 1. Entendendo Health Check
 
+    - Entender os momentos do seu sistemas
+
+    - Tomar decisão do que fazer quando com o pod
+
+2. Criando endpoint Healthz
+
+    - Alterando o app server.go adicionando função de duração de execução dos pods e setando que se o POD ficar mais de 25 segundos aparecerá um erro 500 caso contrário 200.
+
+3. Liveness na prática
+
+    - 3 tipos de Liveness: HTTP, COMMAND e TCP
+
+    - Inserindo livenessProbe dentro do deployment
+
     -
 
 
