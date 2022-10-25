@@ -150,6 +150,20 @@
 
     - Executando um pod com o comando `kubectl exec -it NOMEDOPOD -- bash`
 
+5. Secrets e váriaveis de ambient
+
+    - Alterando app adicionando nova função com secret
+
+    - Kubernetes usa por padrão dados sensiveis como senhas em Base64
+
+    - secret vira váriavel de ambiente
+
+## Probes
+
+1. Entendendo Health Check
+
+    -
+
 
 
 
