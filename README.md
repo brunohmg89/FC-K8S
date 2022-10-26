@@ -216,6 +216,28 @@
 
 3. Aplicando deployment com resources
 
+    - Visualização de recursos com o comando `kubectl top pod NOMEDOPOD`
+
+4. Criando e configurando HPA
+
+    - Horizontal POD AutoScaler
+
+    - Criação do arquivo `hpa.yaml`
+
+5. Versão da imagem para o teste de stress
+
+    - Alteração no app server.go tirando `< 30` do código.
+
+6. Atualização no comando do Fortio
+
+    - Outra nota informando sobre um atributo que não é mais suportado no kubernetes
+
+    - Retirar do comando o trecho `--generator=run-pod/v1`
+
+7. Teste de stress com fortio
+
+    -
+
 
 
 
