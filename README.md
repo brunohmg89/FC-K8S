@@ -176,7 +176,45 @@
 
     - Inserindo livenessProbe dentro do deployment
 
-    -
+4. Entendendo Readiness
+
+    - Verifica se sua aplicação está pronta e só manda trafego após verificação
+
+    - Inserção do readiness e suas opções dentro do deployment
+
+5. Combinando Liveness e Readiness
+
+    - Readiness desvia o trafego e o Liveness reinicia o POD
+
+6. Trabalhando com startupProbe
+
+    - Inserindo startupProbe no deployment
+
+    - startupProbe seta limite de quanto sua aplicação pode demorar para subir, no exemplo ele irá verificar durante aproximadamente 90 segundos e aplicação ficando pronta o kubernetes libera o readiness e o liveness.
+
+    - Recomendação de sempre utilizar o startupProbe
+
+## Resources e HPA
+
+1. Instalando metrics-server
+
+    - Overview sobre o metrics-server
+
+    - Instalando o metrics-server e modificando o deploy para funcionar corretamente.
+
+    - https://github.com/kubernetes-sigs/metrics-server
+
+    - Baixar o deployment do metrics-server e adicionar a linha `- --kubelet-insecure-tls`
+
+2. Entendendo utilização de Resources
+
+    - Limitação de recursos dos PODs (Reservando recursos para o POD)
+
+    - Editando o deployment, inserindo o bloco de `resources`
+
+    - Request = Reserva de recursos -> limits = Limite de recursos
+
+3. Aplicando deployment com resources
 
 
 
