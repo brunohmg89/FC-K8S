@@ -236,6 +236,14 @@
 
 7. Teste de stress com fortio
 
+    - Realizando o comando do Fortio para Stress `kubectl run -it fortio --rm --image=fortio/fortio -- load -qps 800 -t 120s -c 70 "http://goserver-service/healthz"`
+
+    - Vendo os PODs escalarem com os comandos `kubectl get hpa` e `kubectl get pods`
+
+## Statefulsets e volumes persistentes
+
+1. Entendendo volumes persistentes
+
     -
 
 
