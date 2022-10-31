@@ -262,6 +262,30 @@
 
     - Editando e inserindo pvc dentro do deployment
 
+    - Montando o pvc
+
+3. Entendendo Stateless vc Stateful
+
+    - Overview sobre Stateful quando trabalhamos por exemplo com banco de dados e possamos criar pods e nodes de forma organizada.
+
+4. Criando StatefulSet
+
+    - Criando o arquivo statefulset.yaml
+
+    - Criando 3 replicas de um mysql
+
+    - Verificando a quantidade de replicas aumentando e diminuindo de forma organizada.
+
+    - Comando scale `kubectl scale statefulset mysql --replicas=7`
+
+5. Criando headless service
+
+    - Apontamento de DNS - Escolher para qual POD queremos enviar a requisição.
+
+    - Criando o arquivo mysql-service-h.yaml
+
+6. Criando volumes dinamicamente com statefulset
+
     -
 
 
