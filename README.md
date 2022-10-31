@@ -244,6 +244,24 @@
 
 1. Entendendo volumes persistentes
 
+    - Statelss sem estado guardado na aplicação
+
+    - Volume, possível criar um volume dentro do container
+
+    - Pull de Storage persistente e dinamico qtd liberada para o container
+
+    - StorageClass: Claim -> StorageClass -> Disponibilizar o espaço necessário
+
+    - ReadWriteOnce => Pode ler e gravar somente quando os pods estão no mesmo NODE
+
+2. Criando volumes persistentes
+
+    - Criação do arquivo pvc.yaml
+
+    - `kubectl get pvc`
+
+    - Editando e inserindo pvc dentro do deployment
+
     -
 
 

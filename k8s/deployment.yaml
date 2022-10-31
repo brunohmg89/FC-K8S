@@ -20,36 +20,36 @@ spec:
 
           resources:
             requests:
-              cpu: "0.08"
+              cpu: "0.05"
               memory: 20Mi
             limits:
-              cpu: "0.5"
+              cpu: "0.05"
               memory: 25Mi
 
           startupProbe:
             httpGet:
               path: /healthz
-              port: 7000
-            periodSeconds: 3
+              port: 8000
+            periodSeconds: 4
             failureThreshold: 30
 
           readinessProbe:
             httpGet:
               path: /healthz
-              port: 7000
+              port: 8000
             periodSeconds: 3
             failureThreshold: 1
-            #initialDelaySeconds: 15
+            # initialDelaySeconds: 10
 
           livenessProbe:
             httpGet:
               path: /healthz
-              port: 7000
+              port: 8000
             periodSeconds: 5
             failureThreshold: 1
             timeoutSeconds: 1
             successThreshold: 1
-            # initialDelaySeconds: 25
+            # initialDelaySeconds: 15
 
           envFrom:
             - configMapRef:
@@ -60,13 +60,18 @@ spec:
           volumeMounts:
             - mountPath: "/go/myfamily"
               name: config
-
-
+              readOnly: true
+            - mountPath: "/go/pvc"
+              name: goserver-volume
 
       volumes:
+        - name: goserver-volume
+          persistentVolumeClaim:
+            claimName: goserver-pvc
+
         - name: config
           configMap:
             name: configmap-family
             items:
-              - key: members
-                path: "family.txt"
+            - key: members
+              path: "family.txt"
