@@ -286,6 +286,12 @@
 
 6. Criando volumes dinamicamente com statefulset
 
+    - Adicionando PVC ao statefulset
+
+    - Editando arquivo statefulset
+
+7. Devo usar meu banco de dados no kubernetes
+
     -
 
 

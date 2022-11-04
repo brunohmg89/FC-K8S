@@ -3,12 +3,11 @@ kind: StatefulSet
 metadata:
   name: mysql
 spec:
-  replicas: 5
+  replicas: 4
   serviceName: mysql-h
-  podManagementPolicy: Parallel
   selector:
-    matchLabels:
-      app: mysql
+      matchLabels:
+        app: mysql
   template:
     metadata:
       labels:
@@ -20,3 +19,16 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: root
+          volumeMounts:
+            - mountPath: /var/lib/mysql
+              name: mysql-volume
+
+  volumeClaimTemplates:
+  - metadata:
+      name: mysql-volume
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 5Gi
