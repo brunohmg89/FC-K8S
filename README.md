@@ -338,6 +338,12 @@
 
 1. Namespaces
 
+    - Namespace serve para separar projetos podendo separar também requisitos de segurança e até mesmo separar hardware para cada um.
+
+2. Contextos por namespace
+
+    - Criando um diretório com um novo deployment `namespaces/deployment.yaml`
+
     -
 
 
