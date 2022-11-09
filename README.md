@@ -318,6 +318,30 @@
 
     - Criando paths de acesso a aplicação em `path`
 
+## Cert-manager
+
+1. Instalando cert manager
+
+    - Link de doc para instalação `https://cert-manager.io/docs/installation/kubectl/`
+
+2. Configurando e emitindo certificado
+
+    - Criando o arquivo `cluster-issuer.yaml`
+
+    - Configurando para utilizar o let's encrypt para criação e gerenciamento dos certificados.
+
+    - Inserindo `annotations` dentro do arquivo `ingress.yaml` e inserido configuração do let's encrypt bloco `tls`
+
+    - Comando para verificação de certificados `kubectl describe certificate SECRETNAME`
+
+## Namespaces e Service Accounts
+
+1. Namespaces
+
+    -
+
+
+
 
 
 
