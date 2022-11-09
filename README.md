@@ -292,7 +292,33 @@
 
 7. Devo usar meu banco de dados no kubernetes
 
-    -
+    - Opinião sobre usar ou não banco de dados no kubernetes
+
+    - Dar preferencia a bancos de dados gerenciados (como RDS na AWS ou CloudSQL no GCP)
+
+## Ingress
+
+1. Visão geral
+
+    - Ingress ponto único de entrada na sua aplicação
+
+    - Faz o "roteamento" para os microserviços
+
+2. Configurando aplicação no GKE
+
+    - Subiu todos os arquivos com `kubectl apply -f k8s/`
+
+3. Instalando ingress nginx controller
+
+    - Instalando via Helm <https://kubernetes.github.io/ingress-nginx/deploy/>
+
+4. Configurando Ingress e DNS
+
+    - Criando o arquivo `ingress.yaml`
+
+    - Criando paths de acesso a aplicação em `path`
+
+
 
 
 
