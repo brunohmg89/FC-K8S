@@ -344,8 +344,29 @@
 
     - Criando um diretório com um novo deployment `namespaces/deployment.yaml`
 
-    -
+    - Padrão é o namespace Default
 
+    - `kubectl apply -f /k8s/namespaces/deployment.yaml -n=dev`
+
+    - Criando POD dentro de um namespace DEV
+
+    - `kubectl create namespace prod`
+
+    - Criando outro namespace
+
+    - Existe um arquivo .kube dentro da pasta do seu usuários para context do Kubernetes
+
+    - `kubectl config view` para visulizar o contexto que estamos trabalhando.
+
+    - `kubectl config set-context dev --namespace=dev --cluster=kind-cursok8s --user=kind-cursok8s`
+
+    - Criando contextos de dev e prod
+
+    - `kubectl config use-context dev`
+
+3. Entendendo Service Accounts
+
+    -
 
 
 
