@@ -366,6 +366,14 @@
 
 3. Entendendo Service Accounts
 
+    - Serviceaccounts é uma conta que é utilizada para tudo dentro do Kubernetes por exemplo acesso aos PODs
+
+    - Por padrão a Serviceaccount é a "default"
+
+4. Criando Service Account e Roles
+
+    - Criando o arquivo `security.yaml`
+
     -
 
 
