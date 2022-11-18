@@ -374,13 +374,8 @@
 
     - Criando o arquivo `security.yaml`
 
+    - Criando role = permissões
+
+    - setando rbac dentro do arquivo `security.yaml`
+
     -
-
-
-
-
-
-
-
-
-
