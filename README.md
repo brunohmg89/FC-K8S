@@ -378,4 +378,8 @@
 
     - setando rbac dentro do arquivo `security.yaml`
 
-    -
+5. ClusterRole
+
+    - Role trabalha somente no namespace em que você seta.
+
+    - Alterando o arquivo `security.yaml` para ClusterRole
